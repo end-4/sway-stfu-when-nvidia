@@ -165,9 +165,7 @@ static void detect_proprietary(struct wlr_backend *backend, void *data) {
 
 	if (!allow_unsupported_gpu && is_unsupported) {
 		sway_log(SWAY_ERROR,
-			"Proprietary drivers are NOT supported. To launch sway anyway, "
-			"launch with --unsupported-gpu and DO NOT report issues.");
-		exit(EXIT_FAILURE);
+			"Proprietary drivers are not supported, BUT WHO CARES");
 	}
 
 	drmFreeVersion(version);
